@@ -1,0 +1,541 @@
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff8f1 0%,
+            #fff3e8 50%,
+            #fffaf4 100%
+        );
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.about-container {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 100px;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.about-content {
+    flex: 1;
+
+    max-width: 600px;
+}
+
+
+/* ABOUT TAG */
+
+.about-tag {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    margin-bottom: 22px;
+
+    background: #ffffff;
+
+    color: #d97706;
+
+    border: 1px solid #fed7aa;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+
+    box-shadow:
+        0 8px 20px
+        rgba(217, 119, 6, 0.08);
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.about h1 {
+    font-size: 50px;
+
+    line-height: 1.2;
+
+    color: #78350f;
+
+    margin-bottom: 22px;
+
+    font-weight: 800;
+}
+
+
+.about h1 span {
+    color: #f59e0b;
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.about-intro {
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #475569;
+
+    margin-bottom: 18px;
+}
+
+
+.about-description {
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #64748b;
+
+    margin-bottom: 32px;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.about-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 28px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f59e0b,
+            #ea580c
+        );
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 10px 25px
+        rgba(245, 158, 11, 0.25);
+}
+
+
+.about-btn:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 16px 32px
+        rgba(234, 88, 12, 0.30);
+}
+
+
+/* =========================================
+   RIGHT VISUAL AREA
+========================================= */
+
+.about-visual {
+    flex: 1;
+
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+
+/* =========================================
+   BACKGROUND CIRCLE
+========================================= */
+
+.about-visual::before {
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fed7aa,
+            #fde68a
+        );
+
+    opacity: 0.5;
+
+    z-index: 1;
+}
+
+
+/* =========================================
+   MY JOURNEY MAIN CARD
+========================================= */
+
+.about-main-card {
+    width: 300px;
+    height: 300px;
+
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border: 2px solid white;
+
+    border-radius: 50%;
+
+    position: relative;
+
+    z-index: 2;
+
+    box-shadow:
+        0 25px 60px
+        rgba(120, 53, 15, 0.16);
+
+    transition: all 0.4s ease;
+
+    animation:
+        journeyFloat
+        4s
+        ease-in-out
+        infinite;
+}
+
+
+/* HOVER */
+
+.about-main-card:hover {
+    transform: scale(1.06);
+
+    box-shadow:
+        0 30px 70px
+        rgba(245, 158, 11, 0.25);
+
+    animation-play-state: paused;
+}
+
+
+/* =========================================
+   JOURNEY ICON
+========================================= */
+
+.about-icon {
+    width: 90px;
+    height: 90px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fef3c7,
+            #ffedd5
+        );
+
+    font-size: 42px;
+
+    box-shadow:
+        0 10px 25px
+        rgba(245, 158, 11, 0.15);
+
+    transition: all 0.3s ease;
+}
+
+
+.about-main-card:hover .about-icon {
+    transform:
+        rotate(-10deg)
+        scale(1.1);
+}
+
+
+/* =========================================
+   JOURNEY TEXT
+========================================= */
+
+.about-main-card h2 {
+    color: #78350f;
+
+    font-size: 27px;
+
+    margin-bottom: 12px;
+}
+
+
+.about-main-card p {
+    max-width: 220px;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   FLOAT ANIMATION
+========================================= */
+
+@keyframes journeyFloat {
+
+    0%,
+    100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-15px);
+    }
+
+}
+
+
+/* =========================================
+   BACKGROUND DECORATION
+========================================= */
+
+.about::before {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    background: #fed7aa;
+
+    opacity: 0.25;
+
+    top: -150px;
+    right: -100px;
+}
+
+
+.about::after {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+
+    background: #fef3c7;
+
+    opacity: 0.6;
+
+    bottom: -120px;
+    left: -100px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .about-container {
+        gap: 50px;
+    }
+
+
+    .about h1 {
+        font-size: 42px;
+    }
+
+
+    .about-main-card {
+        width: 260px;
+        height: 260px;
+    }
+
+
+    .about-visual::before {
+        width: 340px;
+        height: 340px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .about {
+        min-height: auto;
+
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+
+    .about-container {
+        flex-direction: column;
+
+        gap: 50px;
+
+        text-align: center;
+    }
+
+
+    .about-content {
+        max-width: 100%;
+    }
+
+
+    .about h1 {
+        font-size: 38px;
+    }
+
+
+    .about-visual {
+        width: 100%;
+
+        min-height: 380px;
+    }
+
+
+    .about-visual::before {
+        width: 310px;
+        height: 310px;
+    }
+
+
+    .about-main-card {
+        width: 240px;
+        height: 240px;
+
+        padding: 25px;
+    }
+
+
+    .about-icon {
+        width: 75px;
+        height: 75px;
+
+        font-size: 35px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .about h1 {
+        font-size: 32px;
+    }
+
+
+    .about-intro {
+        font-size: 16px;
+    }
+
+
+    .about-description {
+        font-size: 15px;
+    }
+
+
+    .about-main-card {
+        width: 210px;
+        height: 210px;
+
+        padding: 20px;
+    }
+
+
+    .about-main-card h2 {
+        font-size: 23px;
+    }
+
+
+    .about-main-card p {
+        font-size: 12px;
+    }
+
+
+    .about-visual::before {
+        width: 270px;
+        height: 270px;
+    }
+
+}

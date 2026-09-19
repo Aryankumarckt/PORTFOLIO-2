@@ -1,0 +1,588 @@
+/* =========================================
+   MODERN CONTACT FOOTER
+========================================= */
+
+.footer {
+    padding: 80px 8% 25px;
+    background:
+        radial-gradient(
+            circle at top center,
+            rgba(35, 110, 103, 0.25),
+            transparent 45%
+        ),
+        #062f30;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.footer-container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+
+/* =========================================
+   TOP CONTENT
+========================================= */
+
+.footer-content {
+    text-align: center;
+}
+
+
+.footer-tag {
+    display: inline-block;
+
+    margin: 0 0 18px;
+    padding: 10px 28px;
+
+    border-radius: 30px;
+
+    border: 1px solid rgba(232, 199, 126, 0.8);
+
+    color: #e8c77e;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: 4px;
+}
+
+
+.footer-content h2 {
+    margin: 0;
+
+    color: white;
+
+    font-size: 58px;
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+
+.footer-content h2 span {
+    color: #f0c86d;
+}
+
+
+.footer-description {
+    margin: 16px auto 0;
+
+    color: #b7c8c8;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   CONTACT FORM
+========================================= */
+
+.contact-form {
+    max-width: 950px;
+
+    margin: 28px auto 38px;
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    border: 1px solid rgba(100, 180, 180, 0.28);
+
+    background: rgba(7, 51, 52, 0.55);
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+
+.contact-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+.input-box,
+.message-box {
+    position: relative;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    border-radius: 13px;
+
+    border: 1px solid rgba(110, 190, 190, 0.25);
+
+    background: rgba(255, 255, 255, 0.025);
+
+    transition:
+        border 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.input-box {
+    align-items: center;
+
+    height: 58px;
+}
+
+
+.input-icon,
+.message-icon {
+    margin-left: 22px;
+
+    color: #b6cccc;
+
+    font-size: 21px;
+
+    opacity: 0.9;
+}
+
+
+.input-box input,
+.message-box textarea {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 16px;
+}
+
+
+.input-box input {
+    height: 100%;
+
+    padding: 0 20px;
+}
+
+
+.message-box {
+    margin-top: 20px;
+
+    min-height: 120px;
+}
+
+
+.message-icon {
+    margin-top: 20px;
+}
+
+
+.message-box textarea {
+    min-height: 120px;
+
+    padding: 20px;
+
+    resize: vertical;
+}
+
+
+.input-box:focus-within,
+.message-box:focus-within {
+    border-color: #e8c77e;
+
+    box-shadow:
+        0 0 0 3px rgba(232, 199, 126, 0.08);
+}
+
+
+.input-box input::placeholder,
+.message-box textarea::placeholder {
+    color: #91a7a8;
+}
+
+
+/* =========================================
+   SEND BUTTON
+========================================= */
+
+.send-message-btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+
+    margin: 20px auto 0;
+
+    padding: 17px 42px;
+
+    border: none;
+
+    border-radius: 13px;
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0b6,
+            #e8b94f
+        );
+
+    color: #123536;
+
+    font-family: inherit;
+
+    font-size: 17px;
+    font-weight: 800;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.send-message-btn span {
+    font-size: 23px;
+}
+
+
+.send-message-btn:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 30px
+        rgba(232, 185, 79, 0.25);
+}
+
+
+/* =========================================
+   SOCIAL LINKS
+========================================= */
+
+.footer-links {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+
+    max-width: 1200px;
+
+    margin: 0 auto 45px;
+}
+
+
+.footer-link {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    min-height: 92px;
+
+    padding: 18px 28px;
+
+    text-decoration: none;
+
+    border-radius: 16px;
+
+    border: 1px solid rgba(88, 175, 176, 0.5);
+
+    background: rgba(255, 255, 255, 0.025);
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        border 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.footer-link:hover {
+    transform: translateY(-7px);
+
+    background: rgba(255, 255, 255, 0.07);
+
+    border-color: #e8c77e;
+
+    box-shadow:
+        0 15px 35px
+        rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.social-icon {
+    width: 58px;
+
+    height: 58px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+}
+
+
+.social-icon svg {
+    width: 32px;
+
+    height: 32px;
+
+    fill: white;
+}
+
+
+/* LINKEDIN */
+
+.linkedin-icon {
+    background:
+        linear-gradient(
+            135deg,
+            #1778b5,
+            #0a4f7a
+        );
+}
+
+
+/* INSTAGRAM */
+
+.instagram-icon {
+    background:
+        linear-gradient(
+            135deg,
+            #6b35d4,
+            #d62976,
+            #feda75
+        );
+}
+
+
+.instagram-icon svg {
+    fill: none;
+
+    stroke: white;
+
+    stroke-width: 2;
+}
+
+
+.instagram-icon .instagram-dot {
+    fill: white;
+
+    stroke: none;
+}
+
+
+/* LIVE DEMO */
+
+.demo-icon {
+    background:
+        linear-gradient(
+            135deg,
+            #1c9b90,
+            #12645f
+        );
+
+    color: white;
+
+    font-size: 38px;
+
+    font-weight: 400;
+}
+
+
+/* =========================================
+   LINK TEXT
+========================================= */
+
+.footer-link-text {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.footer-link-text small {
+    color: #b8cbcb;
+
+    font-size: 15px;
+}
+
+
+.footer-link-text strong {
+    color: white;
+
+    font-size: 17px;
+}
+
+
+.footer-link-text strong span {
+    margin-left: 12px;
+
+    color: #b8d6d4;
+
+    font-size: 21px;
+}
+
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.footer-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-top: 28px;
+
+    border-top:
+        1px solid rgba(160, 210, 210, 0.2);
+}
+
+
+.footer-bottom p {
+    margin: 0;
+
+    color: #b7c8c8;
+
+    font-size: 14px;
+}
+
+
+.footer-love {
+    color: #d5c98d !important;
+}
+
+
+.footer-love span {
+    margin: 0 7px;
+
+    color: #f0c86d;
+
+    font-size: 19px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .footer-content h2 {
+        font-size: 46px;
+    }
+
+
+    .footer-links {
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .footer {
+        padding: 60px 6% 25px;
+    }
+
+
+    .footer-tag {
+        padding: 9px 20px;
+
+        font-size: 11px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .footer-content h2 {
+        font-size: 38px;
+    }
+
+
+    .footer-description {
+        font-size: 15px;
+    }
+
+
+    .contact-form {
+        padding: 14px;
+    }
+
+
+    .contact-row {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+
+    .input-box {
+        height: 56px;
+    }
+
+
+    .footer-links {
+        gap: 15px;
+    }
+
+
+    .footer-link {
+        min-height: 82px;
+
+        padding: 16px 20px;
+    }
+
+
+    .social-icon {
+        width: 52px;
+
+        height: 52px;
+    }
+
+
+    .footer-bottom {
+        flex-direction: column;
+
+        gap: 14px;
+
+        text-align: center;
+    }
+
+}

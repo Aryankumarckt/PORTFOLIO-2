@@ -1,0 +1,564 @@
+/* =========================================
+   LEARNING SECTION
+========================================= */
+
+.learning {
+    padding: 110px 10%;
+    background:
+        linear-gradient(
+            135deg,
+            #f8faf7 0%,
+            #f4f7f2 45%,
+            #fff8ed 100%
+        );
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* BACKGROUND DECORATION */
+
+.learning::before,
+.learning::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(10px);
+    pointer-events: none;
+}
+
+.learning::before {
+    width: 350px;
+    height: 350px;
+    background: rgba(47, 119, 112, 0.08);
+    top: -120px;
+    right: -100px;
+}
+
+.learning::after {
+    width: 300px;
+    height: 300px;
+    background: rgba(214, 166, 93, 0.10);
+    bottom: -120px;
+    left: -100px;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.learning-container {
+    max-width: 1150px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.learning-heading {
+    max-width: 720px;
+    margin-bottom: 70px;
+}
+
+.learning-heading .section-label {
+    margin-bottom: 18px;
+}
+
+.learning-heading h1 {
+    margin: 0 0 18px;
+    color: #254f4b;
+    font-size: 52px;
+    line-height: 1.15;
+    font-weight: 800;
+}
+
+.learning-heading h1 span {
+    color: #c27b32;
+}
+
+.learning-heading > p:last-child {
+    margin: 0;
+    color: #657673;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   ROADMAP
+========================================= */
+
+.learning-roadmap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+
+/* CONNECTING LINE */
+
+.learning-roadmap::before {
+    content: "";
+    position: absolute;
+    left: 48px;
+    top: 55px;
+    bottom: 55px;
+    width: 2px;
+    background:
+        linear-gradient(
+            to bottom,
+            #2f7770,
+            #d6a65d,
+            #2f7770
+        );
+    opacity: 0.35;
+}
+
+
+/* =========================================
+   LEARNING CARD
+========================================= */
+
+.learning-card {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 70px 85px 1fr;
+    align-items: center;
+    gap: 24px;
+
+    min-height: 155px;
+    padding: 28px 35px;
+
+    background: rgba(255, 255, 255, 0.88);
+
+    border: 1px solid #e0e7e2;
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 28px
+        rgba(37, 79, 75, 0.06);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+/* LEFT ACCENT */
+
+.learning-card::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 6px;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            180deg,
+            #2f7770,
+            #d6a65d
+        );
+
+    transform: scaleY(0);
+    transform-origin: top;
+
+    transition: transform 0.35s ease;
+}
+
+
+/* HOVER */
+
+.learning-card:hover {
+    transform: translateX(12px);
+
+    border-color: #b7d0c7;
+
+    box-shadow:
+        0 20px 40px
+        rgba(37, 79, 75, 0.12);
+}
+
+
+.learning-card:hover::before {
+    transform: scaleY(1);
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.learning-number {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #254f4b;
+
+    color: white;
+
+    font-size: 17px;
+    font-weight: 800;
+
+    position: relative;
+    z-index: 2;
+
+    box-shadow:
+        0 8px 20px
+        rgba(37, 79, 75, 0.18);
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease;
+}
+
+
+.learning-card:hover .learning-number {
+    transform: rotate(-10deg) scale(1.08);
+    background: #c27b32;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.learning-icon {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e8f2ee,
+            #fff3d9
+        );
+
+    font-size: 32px;
+
+    transition:
+        transform 0.35s ease;
+}
+
+
+.learning-card:hover .learning-icon {
+    transform:
+        rotate(-8deg)
+        scale(1.1);
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.learning-content h2 {
+    margin: 0 0 8px;
+
+    color: #254f4b;
+
+    font-size: 23px;
+    font-weight: 800;
+
+    transition: color 0.3s ease;
+}
+
+
+.learning-card:hover .learning-content h2 {
+    color: #c27b32;
+}
+
+
+.learning-content p {
+    max-width: 720px;
+
+    margin: 0 0 14px;
+
+    color: #697b78;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+.learning-content span {
+    display: inline-block;
+
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    background: #f0f7f3;
+
+    border: 1px solid #d9e9e1;
+
+    color: #2f7770;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    transition: all 0.3s ease;
+}
+
+
+.learning-card:hover .learning-content span {
+    background: #2f7770;
+    color: white;
+}
+
+
+/* =========================================
+   ACTIVE LEARNING
+========================================= */
+
+.active-learning {
+    border-color: #c7ddd4;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fbfdfc,
+            #f4faf7
+        );
+}
+
+
+.active-learning .learning-number {
+    background: #2f7770;
+}
+
+
+/* =========================================
+   MAIN FOCUS
+========================================= */
+
+.learning-focus {
+    background:
+        linear-gradient(
+            135deg,
+            #f8fcfa,
+            #fffaf0
+        );
+
+    border-color: #ded9bd;
+}
+
+
+/* =========================================
+   BOTTOM MESSAGE
+========================================= */
+
+.learning-bottom {
+    margin-top: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    padding: 32px 38px;
+
+    border-radius: 22px;
+
+    background: #254f4b;
+
+    box-shadow:
+        0 18px 40px
+        rgba(37, 79, 75, 0.16);
+}
+
+
+.learning-bottom > div {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+.learning-bottom span {
+    font-size: 28px;
+}
+
+
+.learning-bottom p {
+    margin: 0;
+
+    color: #edf7f2;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+.learning-bottom a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    white-space: nowrap;
+
+    padding: 14px 22px;
+
+    border-radius: 10px;
+
+    background: #e8c77e;
+
+    color: #254f4b;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    transition: all 0.3s ease;
+}
+
+
+.learning-bottom a:hover {
+    transform: translateY(-4px);
+    background: #f3d997;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .learning {
+        padding: 85px 7%;
+    }
+
+
+    .learning-heading h1 {
+        font-size: 44px;
+    }
+
+
+    .learning-card {
+        grid-template-columns: 60px 70px 1fr;
+
+        gap: 18px;
+
+        padding: 25px;
+    }
+
+
+    .learning-number {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .learning-roadmap::before {
+        left: 42px;
+    }
+
+
+    .learning-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .learning {
+        padding: 70px 6%;
+    }
+
+
+    .learning-heading {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+
+    .learning-heading h1 {
+        font-size: 35px;
+    }
+
+
+    .learning-card {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+
+        padding: 25px;
+    }
+
+
+    .learning-roadmap::before {
+        display: none;
+    }
+
+
+    .learning-number {
+        position: absolute;
+
+        top: 18px;
+        right: 18px;
+
+        width: 48px;
+        height: 48px;
+
+        font-size: 13px;
+    }
+
+
+    .learning-icon {
+        width: 60px;
+        height: 60px;
+
+        font-size: 28px;
+    }
+
+
+    .learning-card:hover {
+        transform: translateY(-8px);
+    }
+
+
+    .learning-bottom {
+        padding: 30px 25px;
+
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .learning-bottom > div {
+        flex-direction: column;
+    }
+
+}
